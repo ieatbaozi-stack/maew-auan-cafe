@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>กาแฟแมวอ้วน Maew Auan Cafe | เมนูกาแฟ</title>
+<meta name="description" content="กาแฟแมวอ้วน Maew Auan Cafe — เมนูกาแฟพื้นฐาน ชงสดทุกแก้ว วาดลายแมวอ้วนด้วยรัก เอสเพรสโซ ลาเต้ มอคค่า เดอร์ตี้ และลาเต้แมวอ้วนซิกเนเจอร์">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#menu">ข้ามไปยังเมนู</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-paw" viewBox="0 0 40 40"><ellipse cx="20" cy="25" rx="9" ry="7.5" fill="currentColor"/><circle cx="9" cy="15" r="4.2" fill="currentColor"/><circle cx="16.5" cy="10.5" r="4.2" fill="currentColor"/><circle cx="24" cy="10.5" r="4.2" fill="currentColor"/><circle cx="31" cy="15" r="4.2" fill="currentColor"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 1 Q13.5 8.5 21 10 Q13.5 11.5 12 19 Q10.5 11.5 3 10 Q10.5 8.5 12 1Z" fill="#fff" stroke="#1F1C1A" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><path d="M5 8 h12 v7 a4 4 0 0 1 -4 4 H9 a4 4 0 0 1 -4 -4 Z" fill="none" stroke="#1F1C1A" stroke-width="2" stroke-linejoin="round"/><path d="M17 9 q3 0 2.5 3 q-.4 2.6 -3 2.4" fill="none" stroke="#1F1C1A" stroke-width="2"/><path d="M8 4 c-2 -2 2 -3 0 -5 M12 4 c-2 -2 2 -3 0 -5" fill="none" stroke="#1F1C1A" stroke-width="1.6" stroke-linecap="round"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19 C5 10 10 5 20 4 C19 14 14 19 5 19 Z" fill="#fff" stroke="#1F1C1A" stroke-width="2" stroke-linejoin="round"/><path d="M5 19 C9 14 13 10 18 6" fill="none" stroke="#1F1C1A" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="m-cat" viewBox="0 0 48 48"><circle cx="24" cy="27" r="16" fill="none" stroke="currentColor" stroke-width="3"/><path d="M12 18 L9 6 L21 13 Z M36 18 L39 6 L27 13 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="18" cy="26" r="2.4" fill="currentColor"/><circle cx="30" cy="26" r="2.4" fill="currentColor"/><path d="M20 32 q2 2.4 4 0 q2 2.4 4 0" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="m-star" viewBox="0 0 24 24"><path d="M12 2 Q13.5 9 21 11 Q13.5 13 12 20 Q10.5 13 3 11 Q10.5 9 12 2Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="หลัก">
+    <a class="brand" href="#hero" aria-label="กาแฟแมวอ้วน กลับขึ้นด้านบน">
+      <svg class="brand-cat" viewBox="0 0 64 56" aria-hidden="true" focusable="false"><ellipse cx="32" cy="34" rx="24" ry="19" fill="#fff" stroke="#1F1C1A" stroke-width="3"/><path d="M14 24 L11 8 L26 18 Z M50 24 L53 8 L38 18 Z" fill="#fff" stroke="#1F1C1A" stroke-width="3" stroke-linejoin="round"/><circle cx="24" cy="32" r="2.6" fill="#1F1C1A"/><circle cx="40" cy="32" r="2.6" fill="#1F1C1A"/><path d="M27 40 q2.5 3 5 0 q2.5 3 5 0" fill="none" stroke="#1F1C1A" stroke-width="2.2" stroke-linecap="round"/><path d="M10 46 h44 l-4 8 h-36 Z" fill="#fff" stroke="#1F1C1A" stroke-width="2.6" stroke-linejoin="round"/><path d="M22 50 l8 0 M34 50 l8 0" stroke="#1F1C1A" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span class="brand-text"><span class="brand-th">กาแฟแมวอ้วน</span><span class="brand-en" lang="en">MAEW AUAN CAFE</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="navlinks" aria-label="เปิดเมนูนำทาง">☰</button>
+    <div class="nav-links" id="navlinks">
+      <a href="#menu">เมนู</a>
+      <a href="#about">เรื่องของเรา</a>
+      <a href="#contact">มาหาเรา</a>
+      <a class="btn-doodle btn-small" href="#menu">สั่งเลย!</a>
+    </div>
+  </nav>
+  <svg class="header-wave" viewBox="0 0 1200 22" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 12 Q 30 2 60 12 T 120 12 T 180 12 T 240 12 T 300 12 T 360 12 T 420 12 T 480 12 T 540 12 T 600 12 T 660 12 T 720 12 T 780 12 T 840 12 T 900 12 T 960 12 T 1020 12 T 1080 12 T 1140 12 T 1200 12" fill="none" stroke="#1F1C1A" stroke-width="3"/></svg>
+</header>
+
+<main>
+<section id="hero" class="hero">
+  <svg class="doodle doodle-paw1" viewBox="0 0 40 40" aria-hidden="true"><use href="#i-paw"/></svg>
+  <svg class="doodle doodle-star1" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-star"/></svg>
+  <svg class="doodle doodle-spiral" viewBox="0 0 60 60" aria-hidden="true"><path d="M30 30 m0 -2 c4 0 6 5 2 8 c-5 4 -14 2 -16 -5 c-2 -8 4 -17 13 -18 c10 -1 19 7 18 17 c-1 11 -12 19 -23 16" fill="none" stroke="#1F1C1A" stroke-width="2.6" stroke-linecap="round"/></svg>
+  <svg class="doodle doodle-asterisk" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 4v32M4 20h32M9 9l22 22M31 9L9 31" fill="none" stroke="#1F1C1A" stroke-width="2.6" stroke-linecap="round"/></svg>
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow sticker">★ วาดด้วยใจ ชงด้วยรัก ★ <span class="eyebrow-en" lang="en">FRESHLY BREWED</span></p>
+      <h1 class="hero-title">กาแฟแมวอ้วน<br><span class="hero-warm">อบอุ่นทุกแก้ว</span> <span class="hero-meow">เมี้ยว!</span></h1>
+      <svg class="crayon-underline" viewBox="0 0 320 14" aria-hidden="true" focusable="false"><path d="M4 9 Q 30 3 55 8 T 110 8 T 165 8 T 220 8 T 275 8 T 316 8" fill="none" stroke="#1F1C1A" stroke-width="4" stroke-linecap="round"/></svg>
+      <p class="hero-sub">เมนูกาแฟพื้นฐาน เข้าใจง่าย ราคาน่ารัก เริ่มต้นแค่ <strong>60฿</strong> — ชงสดทุกแก้ว วาดแมวอ้วนให้ทุกถ้วย</p>
+      <p class="hero-tagline">กาแฟแมวอ้วน — อ้วนแต่ใจดี กาแฟดีทุกแก้ว เมี้ยว!<br><span class="tagline-en" lang="en">Chubby cats, happy cups, good coffee every day, meow!</span></p>
+      <div class="hero-ctas">
+        <a class="btn-doodle" href="#menu">ดูเมนูทั้งหมด
+          <svg class="squiggle-arrow" viewBox="0 0 60 24" aria-hidden="true"><path d="M2 12 Q 15 4 28 12 T 48 12 M42 6 L50 12 L42 18" fill="none" stroke="#1F1C1A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn-doodle btn-ghost" href="#menu" data-goto-sig>เมนูซิกเนเจอร์</a>
+      </div>
+      <ul class="proof-chips" aria-label="จุดเด่นร้าน">
+        <li class="proof-chip">ชงสดทุกแก้ว</li>
+        <li class="proof-chip">นมแมวอ้วนหอมมัน</li>
+        <li class="proof-chip">วาดใหม่ทุกวัน</li>
+      </ul>
+    </div>
+    <div class="hero-art" role="img" aria-label="ภาพวาดแมวอ้วนกอดแก้วกาแฟ">
+      <div class="hero-blob" aria-hidden="true"></div>
+      <svg class="hero-cat" viewBox="0 0 220 210" aria-hidden="true" focusable="false">
+        <ellipse cx="110" cy="150" rx="86" ry="52" fill="#fff" stroke="#1F1C1A" stroke-width="4"/>
+        <path d="M48 112 L38 70 L80 96 Z M172 112 L182 70 L140 96 Z" fill="#fff" stroke="#1F1C1A" stroke-width="4" stroke-linejoin="round"/>
+        <ellipse cx="110" cy="120" rx="62" ry="54" fill="#fff" stroke="#1F1C1A" stroke-width="4"/>
+        <circle cx="88" cy="118" r="5" fill="#1F1C1A"/><circle cx="132" cy="118" r="5" fill="#1F1C1A"/>
+        <circle cx="90" cy="116" r="1.6" fill="#fff"/><circle cx="134" cy="116" r="1.6" fill="#fff"/>
+        <path d="M98 136 q6 7 12 0 q6 7 12 0" fill="none" stroke="#1F1C1A" stroke-width="3.4" stroke-linecap="round"/>
+        <path d="M50 122 l-20 -4 M51 132 l-19 4 M170 122 l20 -4 M169 132 l19 4" stroke="#1F1C1A" stroke-width="2.6" stroke-linecap="round"/>
+        <path d="M70 168 h80 l-7 30 h-66 Z" fill="#fff" stroke="#1F1C1A" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M82 176 l12 12 M94 176 l12 10" stroke="#1F1C1A" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M150 172 q16 3 10 18 q-5 11 -17 8" fill="none" stroke="#1F1C1A" stroke-width="4" stroke-linecap="round"/>
+        <path d="M88 88 c-6 -8 6 -13 0 -21 M104 86 c-6 -8 6 -13 0 -21 M120 86 c-6 -8 6 -13 0 -21" fill="none" stroke="#1F1C1A" stroke-width="3" stroke-linecap="round"/>
+        <path d="M186 60 l2.5 6 6.5 2.5 -6.5 2.5 -2.5 6 -2.5 -6 -6.5 -2.5 6.5 -2.5 Z" fill="#fff" stroke="#1F1C1A" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <p class="hero-caption sticker-mini">ตื่นมาดื่มกาแฟกันเถอะ! <span lang="en">Meow! Wake up &amp; smell the coffee!</span></p>
+      <p class="hero-note">อ้วนอย่างมีความสุข ง่วงเมื่อไหร่ก็แวะมา ♥</p>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track">
+<div class="marquee-set">
+<svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg>
+</div>
+<div class="marquee-set" aria-hidden="true">
+<svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg><svg class="m-logo" viewBox="0 0 48 48"><use href="#m-cat"/></svg><svg class="m-logo m-paw" viewBox="0 0 40 40"><use href="#i-paw"/></svg><svg class="m-logo m-star" viewBox="0 0 24 24"><use href="#m-star"/></svg>
+</div>
+</div></div>
+
+<section id="menu" class="section menu-section">
+  <div class="container">
+    <h2 class="section-title"><svg class="title-spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 Q13.5 9 21 11 Q13.5 13 12 20 Q10.5 13 3 11 Q10.5 9 12 2Z" fill="#fff" stroke="#1F1C1A" stroke-width="2" stroke-linejoin="round"/></svg>เมนูของเรา <span class="title-en" lang="en">BASIC COFFEE</span></h2>
+    <svg class="crayon-underline center" viewBox="0 0 220 14" aria-hidden="true" focusable="false"><path d="M4 9 Q 28 3 52 8 T 104 8 T 156 8 T 216 8" fill="none" stroke="#1F1C1A" stroke-width="4" stroke-linecap="round"/></svg>
+    <p class="section-sub">กาแฟพื้นฐาน 7 เมนู — เลือกร้อนหรือเย็นได้ (เดอร์ตี้มีแต่เย็นนะ) ทุกแก้วมีแมวอ้วนวาดด้วยรัก</p>
+    <div class="filter-bar" role="group" aria-label="กรองเมนู">
+      <button class="chip is-active" data-filter="all" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-star"/></svg>ทั้งหมด <span class="count">7</span></button>
+      <button class="chip" data-filter="hot" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cup"/></svg>ร้อน <span class="count">6</span></button>
+      <button class="chip" data-filter="iced" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cup"/></svg>เย็น <span class="count">7</span></button>
+      <button class="chip" data-filter="signature" aria-pressed="false"><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#i-paw"/></svg>ซิกเนเจอร์ <span class="count">1</span></button>
+    </div>
+    <div id="menu-grid" class="menu-grid" aria-live="polite"></div>
+    <p id="menu-empty" class="menu-empty" hidden>ยังไม่มีเมนูหมวดนี้จ้า กลับมาดูเมนูทั้งหมดก่อนนะ เมี้ยว~</p>
+    <p class="menu-note">+นมโอ๊ต 15฿ / +ช็อต 10฿ / +วิปแมวอ้วน 20฿ — ถามน้องแมวที่เคาน์เตอร์ได้เลย!</p>
+    <noscript><div class="menu-grid">
+      <article class="menu-card"><div class="card-art art-0"><p>🐱 เอสเพรสโซ Espresso — ร้อน 60฿ / เย็น 70฿</p></div><h3>เอสเพรสโซ <span lang="en">Espresso</span></h3><p>ช็อตเข้มข้น หอมมัน ตื่นทันทีในจิบเดียว</p></article>
+      <article class="menu-card"><div class="card-art art-1"><p>🐱 อเมริกาโน่ Americano — ร้อน 65฿ / เย็น 75฿</p></div><h3>อเมริกาโน่ <span lang="en">Americano</span></h3><p>สดชื่น คลีน ดื่มง่าย หอมกาแฟแท้</p></article>
+      <article class="menu-card"><div class="card-art art-2"><p>🐱 ลาเต้ Latte — ร้อน 70฿ / เย็น 80฿</p></div><h3>ลาเต้ <span lang="en">Latte</span></h3><p>นุ่มละมุน นมสดหวานมัน กลิ้งบนฟองนม</p></article>
+      <article class="menu-card"><div class="card-art art-3"><p>🐱 คาปูชิโน Cappuccino — ร้อน 70฿ / เย็น 80฿</p></div><h3>คาปูชิโน <span lang="en">Cappuccino</span></h3><p>ฟองนมหนานุ่ม โรยโกโก้ เข้มกว่าลาเต้นิดๆ</p></article>
+      <article class="menu-card"><div class="card-art art-0"><p>🐱 มอคค่า Mocha — ร้อน 75฿ / เย็น 85฿</p></div><h3>มอคค่า <span lang="en">Mocha</span></h3><p>กาแฟผสานช็อกโกแลต หวานละมุนเหมือนขนมแมว</p></article>
+      <article class="menu-card"><div class="card-art art-1"><p>🐱 เดอร์ตี้ Dirty — เย็น 95฿ (เย็นเท่านั้น)</p></div><h3>เดอร์ตี้ <span lang="en">Dirty</span></h3><p>นมเย็นจัดราดช็อตร้อน แยกชั้นสวย ต้องรีบจิบ</p></article>
+      <article class="menu-card is-sig"><div class="card-art art-2"><p>🐱 ลาเต้แมวอ้วน Maew Auan Latte — 89฿/99฿ ★ Signature</p></div><h3>ลาเต้แมวอ้วน <span lang="en">Maew Auan Latte</span></h3><p>นมฮอกไกโด+วนิลา วาดอุ้งเท้าทุกแก้ว</p></article>
+    </div></noscript>
+  </div>
+</section>
+
+<div class="cat-divider" aria-hidden="true">
+  <svg viewBox="0 0 600 40" focusable="false"><path d="M10 28 Q 40 10 70 26 T 130 26 T 190 26 T 250 26 T 310 26 T 370 26 T 430 26 T 490 26 T 550 26 T 590 26" fill="none" stroke="#1F1C1A" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="1 10"/><g transform="translate(300 20)"><ellipse cx="0" cy="4" rx="16" ry="12" fill="#fff" stroke="#1F1C1A" stroke-width="2.6"/><path d="M-12 -4 L-14 -16 L-3 -8 Z M12 -4 L14 -16 L3 -8 Z" fill="#fff" stroke="#1F1C1A" stroke-width="2.4" stroke-linejoin="round"/><path d="M-6 3 q1.5 2 3 0 q1.5 2 3 0 M-7 2 h-6 M-7 6 h-6 M7 2 h6 M7 6 h6" stroke="#1F1C1A" stroke-width="1.8" stroke-linecap="round" fill="none"/><circle cx="-5" cy="1" r="1.6" fill="#1F1C1A"/><circle cx="5" cy="1" r="1.6" fill="#1F1C1A"/></g></svg>
+</div>
+
+<section id="about" class="section about-section">
+  <div class="container">
+    <h2 class="section-title"><svg class="title-spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 Q13.5 9 21 11 Q13.5 13 12 20 Q10.5 13 3 11 Q10.5 9 12 2Z" fill="#fff" stroke="#1F1C1A" stroke-width="2" stroke-linejoin="round"/></svg>ทำไมต้องแมวอ้วน?</h2>
+    <svg class="crayon-underline center" viewBox="0 0 220 14" aria-hidden="true" focusable="false"><path d="M4 9 Q 28 3 52 8 T 104 8 T 156 8 T 216 8" fill="none" stroke="#1F1C1A" stroke-width="4" stroke-linecap="round"/></svg>
+    <div class="feature-row">
+      <article class="feature-card"><svg viewBox="0 0 24 24" class="f-icon" aria-hidden="true"><use href="#i-cup"/></svg><h3>เมล็ดไทยดอยช้าง</h3><p>คั่วกลาง หอมถั่ว+โกโก้ ดื่มง่ายทุกวัน แมวอ้วนคอนเฟิร์มด้วยการกลิ้ง 3 ตลบ</p></article>
+      <article class="feature-card"><svg viewBox="0 0 40 40" class="f-icon" aria-hidden="true"><use href="#i-paw"/></svg><h3>ชงช้าๆ เหมือนเกาพุงแมว</h3><p>ไม่รีบ ไม่ลวก สกัดหวานกำลังดี ฟองนมนุ่มเหมือนพุงแมวอ้วน</p></article>
+      <article class="feature-card"><svg viewBox="0 0 24 24" class="f-icon" aria-hidden="true"><use href="#i-leaf"/></svg><h3>วาดแก้วละใบ ไม่ซ้ำกัน</h3><p>ทุกแก้วมีดูเดิลแมวอ้วน 1 ตัว ถ่ายรูปก่อนดื่มนะ เดี๋ยวแมวละลาย!</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section contact-section">
+  <div class="container contact-inner">
+    <div>
+      <h2 class="section-title"><svg class="title-spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 Q13.5 9 21 11 Q13.5 13 12 20 Q10.5 13 3 11 Q10.5 9 12 2Z" fill="#fff" stroke="#1F1C1A" stroke-width="2" stroke-linejoin="round"/></svg>มาหาเรา <span class="title-en" lang="en">VISIT US</span></h2>
+      <address class="address">
+        <p><strong>กาแฟแมวอ้วน Maew Auan Cafe</strong><br>123 ซอยแมวกลิ้ง ถนนกาแฟหอม แขวงอ้วนกลม กรุงเทพฯ</p>
+        <p>เปิดทุกวัน 8:00–18:00 (วันแมวง่วงอาจปิดเร็ว 10 นาที)</p>
+        <p>โทร <a href="tel:021234567">02-123-4567</a> · LINE <span class="line-id">@maewauan</span></p>
+      </address>
+    </div>
+    <div class="map-card" role="img" aria-label="แผนที่วาดมือ: จากป้ายรถเมล์แมวอ้วน เดินตามรอยเท้าแมว 2 นาทีถึงร้าน">
+      <svg viewBox="0 0 300 190" aria-hidden="true" focusable="false">
+        <rect x="8" y="8" width="284" height="174" rx="18" fill="#fff" stroke="#1F1C1A" stroke-width="3"/>
+        <path d="M30 150 Q 70 120 90 100 T 150 80 T 220 60" fill="none" stroke="#1F1C1A" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
+        <rect x="36" y="36" width="64" height="44" rx="10" fill="#fff" stroke="#1F1C1A" stroke-width="2.6" stroke-dasharray="5 3"/>
+        <text x="68" y="62" text-anchor="middle" font-size="13" fill="#1F1C1A" font-family="Bai Jamjuree,sans-serif">ร้านเรา</text>
+        <g transform="translate(225 52)"><ellipse cx="0" cy="6" rx="8" ry="6.6" fill="#1F1C1A"/><circle cx="-9" cy="-4" r="3.4" fill="#1F1C1A"/><circle cx="9" cy="-4" r="3.4" fill="#1F1C1A"/></g>
+        <g transform="translate(120 120) rotate(-18)"><ellipse cx="0" cy="5" rx="7" ry="5.6" fill="#1F1C1A" opacity=".25"/><circle cx="-8" cy="-3" r="2.8" fill="#1F1C1A" opacity=".25"/><circle cx="8" cy="-3" r="2.8" fill="#1F1C1A" opacity=".25"/></g>
+        <g transform="translate(170 100) rotate(14)"><ellipse cx="0" cy="5" rx="7" ry="5.6" fill="#1F1C1A" opacity=".25"/><circle cx="-8" cy="-3" r="2.8" fill="#1F1C1A" opacity=".25"/><circle cx="8" cy="-3" r="2.8" fill="#1F1C1A" opacity=".25"/></g>
+        <rect x="36" y="140" width="120" height="26" rx="12" fill="#fff" stroke="#1F1C1A" stroke-width="2.6" stroke-dasharray="5 3"/>
+        <text x="96" y="158" text-anchor="middle" font-size="12" fill="#1F1C1A" font-family="Bai Jamjuree,sans-serif">ป้ายรถเมล์แมวอ้วน</text>
+      </svg>
+      <p class="map-note">เดินตามรอยเท้าแมวจากป้ายรถเมล์ 2 นาทีถึง! มีหนวดชี้ทางตลอดซอย</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer-doodle">
+  <svg class="footer-tear" viewBox="0 0 1200 26" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M0 26 L0 16 L40 10 L80 18 L120 8 L160 16 L200 10 L240 18 L280 8 L320 16 L360 10 L400 18 L440 8 L480 16 L520 10 L560 18 L600 8 L640 16 L680 10 L720 18 L760 8 L800 16 L840 10 L880 18 L920 8 L960 16 L1000 10 L1040 18 L1080 8 L1120 16 L1160 10 L1200 16 L1200 26 Z" fill="#1F1C1A"/></svg>
+  <div class="container footer-inner">
+    <div class="footer-col"><p class="footer-logo">กาแฟแมวอ้วน <span lang="en">MAEW AUAN</span></p><p>อ้วนแต่ใจดี กาแฟดีทุกแก้ว เมี้ยว! เปิดทุกวัน 8:00–18:00</p></div>
+    <div class="footer-col"><p class="footer-h">ลัดเลาะ</p><p><a href="#menu">เมนู</a> · <a href="#about">เรื่องของเรา</a> · <a href="#contact">มาหาเรา</a></p></div>
+    <div class="footer-col"><p class="footer-h">ทักแมวอ้วน</p><p class="socials"><span class="social" aria-hidden="true">ฅ</span><span class="social" aria-hidden="true">♥</span><span class="social" aria-hidden="true">★</span> <span class="line-id">IG / TikTok / LINE @maewauan</span></p></div>
+  </div>
+  <svg class="footer-squiggle" viewBox="0 0 600 12" aria-hidden="true" focusable="false"><path d="M4 7 Q 40 1 80 7 T 160 7 T 240 7 T 320 7 T 400 7 T 480 7 T 596 7" fill="none" stroke="#FFFDFB" stroke-width="3" stroke-linecap="round"/></svg>
+  <div class="container footer-bottom"><p>© <span id="year">2026</span> กาแฟแมวอ้วน Maew Auan Cafe · วาดด้วยรัก by Maew Auan</p><a class="to-top" href="#hero" aria-label="กลับขึ้นด้านบน"><svg viewBox="0 0 40 40" aria-hidden="true"><use href="#i-paw"/></svg></a></div>
+</footer>
+</body>
+</html>
