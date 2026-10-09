@@ -85,10 +85,29 @@ section[id]{scroll-margin-top:90px}
 .hero-caption span{display:block; font-family:var(--font-body); font-weight:400; font-size:15px; color:var(--ink-soft)}
 .hero-note{font-family:var(--font-body); font-weight:600; font-size:17px}
 .doodle{position:absolute; pointer-events:none; color:var(--ink)}
-.doodle-paw1{width:52px; top:22px; right:6%; opacity:.28; transform:rotate(22deg)}
-.doodle-star1{width:34px; top:120px; left:3%; animation:spin 9s linear infinite}
-.doodle-spiral{width:56px; bottom:8%; left:4%; opacity:.7; transform:rotate(-10deg)}
-.doodle-asterisk{width:38px; top:8%; right:12%; opacity:.7; transform:rotate(14deg)}
+.doodle-paw1{width:44px; top:1%; right:5%; opacity:.28; transform:rotate(22deg)}
+.doodle-star1{width:30px; bottom:2%; left:2%; animation:spin 9s linear infinite}
+.doodle-spiral{width:44px; bottom:2%; right:4%; opacity:.7; transform:rotate(-10deg)}
+.doodle-asterisk{width:32px; top:1%; left:2%; opacity:.7; transform:rotate(14deg)}
+/* แมวอ้วนเยอะๆ — 2 เลน (ซ้าย 7 + ขวา 7) เว้นระยะเท่ากัน ไม่ทับกัน */
+/* เลนซ้าย */
+.doodle-cat1{width:50px; top:10%; left:7%; opacity:.32; transform:rotate(-8deg)}
+.doodle-cat2{width:58px; top:21%; left:3%; opacity:.28; transform:rotate(12deg)}
+.doodle-cat3{width:46px; top:33%; left:8%; opacity:.35; transform:rotate(-15deg); animation:roll 8s ease-in-out infinite}
+.doodle-cat4{width:42px; top:44%; left:4%; opacity:.3; transform:rotate(6deg)}
+.doodle-cat5{width:44px; top:55%; left:9%; opacity:.33; transform:rotate(-10deg); animation:wiggle 3s ease-in-out infinite}
+.doodle-cat6{width:52px; top:67%; left:3%; opacity:.29; transform:rotate(18deg)}
+.doodle-cat7{width:46px; top:78%; left:8%; opacity:.31; transform:rotate(-12deg)}
+/* เลนขวา */
+.doodle-cat8{width:44px; top:11%; right:7%; opacity:.34; transform:rotate(8deg); animation:wiggle 4s ease-in-out infinite}
+.doodle-cat9{width:46px; top:22%; right:11%; opacity:.3; transform:rotate(-9deg)}
+.doodle-cat10{width:48px; top:34%; right:6%; opacity:.33; transform:rotate(14deg)}
+.doodle-cat11{width:56px; top:45%; right:12%; opacity:.29; transform:rotate(-6deg)}
+.doodle-cat12{width:56px; top:56%; right:7%; opacity:.32; transform:rotate(11deg); animation:roll 9s ease-in-out infinite}
+.doodle-cat13{width:42px; top:68%; right:11%; opacity:.3; transform:rotate(-14deg)}
+.doodle-cat14{width:50px; top:79%; right:6%; opacity:.34; transform:rotate(7deg)}
+@keyframes roll{0%,100%{transform:rotate(-15deg)}50%{transform:rotate(-5deg)}}
+@keyframes wiggle{0%,100%{transform:rotate(-10deg) translateY(0)}25%{transform:rotate(-12deg) translateY(-2px)}75%{transform:rotate(-8deg) translateY(2px)}}
 @keyframes spin{to{transform:rotate(360deg)}}
 
 /* marquee: scrolling chubby-cat logos, full-bleed straight band */
@@ -132,8 +151,9 @@ section[id]{scroll-margin-top:90px}
 .menu-card::before{content:""; position:absolute; top:-14px; left:50%; transform:translateX(-50%) rotate(-6deg); width:90px; height:26px; background:rgba(31,28,26,.08); border:1px dashed var(--ink)}
 .card-badge{position:absolute; top:10px; right:10px; background:#fff; border:2px solid var(--ink); border-radius:999px; font-size:12px; font-weight:700; padding:3px 10px; transform:rotate(6deg); box-shadow:2px 2px 0 var(--ink)}
 .is-sig .card-badge{background:var(--orange)}
-.card-art{position:relative; border:2.5px dashed var(--ink); border-radius:var(--radius2); padding:8px; margin-bottom:10px; background:#fff}
+.card-art{position:relative; border:2.5px dashed var(--ink); border-radius:var(--radius2); padding:8px; margin-bottom:10px; background:#fff; display:flex; align-items:center; justify-content:center; min-height:146px}
 .card-art svg{width:100%; height:130px; display:block}
+.cat-emoji{font-size:90px; line-height:1; display:block; text-align:center}
 .art-0{background:#fff}.art-1{background:var(--paper2)}.art-2{background:#fff}.art-3{background:var(--paper2)}
 .card-scribble{position:absolute; bottom:10px; right:10px; width:22px; height:22px; opacity:.55; transform:rotate(12deg)}
 .card-name{font-family:var(--font-body); font-weight:700; font-size:20px; margin:6px 0 4px}
